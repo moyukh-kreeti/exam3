@@ -1,32 +1,261 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" >
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
-    <link rel="stylesheet" href="./style.css" >
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-    >
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
-    <script
-      src="https://kit.fontawesome.com/1eaf330485.js"
-      crossorigin="anonymous"
-    ></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com" >
-    <title>Exam</title>
-  </head>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SANO</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+  integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="./style.css">
+
+</head>
   <body>
 
-    <header>
-
+    <header class="container">
+      <nav class="navbar navbar-expand-md navbar-light nav-section__content-nav">
+        <div class="container-fluid">
+          <a href="" class="navbar-brand">
+            <img src="./assets/logo.png" alt="Website Logo" class="logo">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav m-auto gap-4 align-items-center">
+              <li class="nav-item ">
+                <a class="nav-link nav-item--custom" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link nav-item--custom" href="#">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link nav-item--custom" href="#">Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link nav-item--custom" href="#">Pages</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link nav-item--custom" href="#">Elements</a>
+              </li>
+              <li class="nav-item">
+                <a href="#">
+                  <img src="./assets/header-search.png" alt="Search Icon">
+                </a>
+              </li>
+              <li class="nav-item">
+                <button class="nav__appointments">Appiontments</button>
+              </li>
+            </ul>
+            
+          </div>  
+        </div>
+      </nav>
     </header>
     <main>
 
+      <section class="banner">
+        <div class="container banner__container">
+          <span class="banner__sub-heading">SANO MEDICAL CLINIC</span>
+          <h1 class="banner__main-heading">Trust our experts for your health</h1>
+          <div class="banner__form__box">
+            <form action="" class="banner__form">
+              <input type="email" placeholder="Your e-mail*" id="" class="width-custom banner__form__input-field">
+              <input type="text" placeholder="Phone number*" id="" class="width-custom banner__form__input-field">
+              <div class="dropdown dropdown--custom width-custom">
+                <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
+                  Service
+                </button>
+                <ul class="dropdown-menu dropdown-menu-light" aria-labelledby="dropdownMenuButton2">
+                  <li><a class="dropdown-item active" href="#">Action</a></li>
+                </ul>
+              </div>
+              <div class="d-flex align-items-center justify-content-center width-custom">
+                <input type="text" name="" id="" placeholder="Date" class="banner__form__input-field--last">
+                <span><i class="fa-solid fa-calendar-day"></i></span>
+              </div>
+              <button class="banner__form__book-now">BOOK</button>
+            </form>
+          </div>
+          <p class="banner__description">Globally incubate standards compliant channels before scalable benefits quickly disseminate superior.</p>
+        </div>
+      </section>
+
+      <section class="container clinic-info">
+
+        <div class="row clinic-info__row">
+          <div class="col-md-4 col-sm-6 col-xs-12 clinic-info__cards">
+            <span class="clinic-info__sub-heading">SERVICES</span>
+            <h2>Diagnostics</h2>
+            <ul class="clinic-info__cards__item-list">
+              <li><span class="clinic__info__cards__tick"><img src="./assets/tick.png" alt="Tick Icon"></span>Ultrasound examination</li>
+              <li><span class="clinic__info__cards__tick"><img src="./assets/tick.png" alt="Tick Icon"></span>MRI</li>
+              <li><span class="clinic__info__cards__tick"><img src="./assets/tick.png" alt="Tick Icon"></span>X-ray</li>
+              <li><span class="clinic__info__cards__tick"><img src="./assets/tick.png" alt="Tick Icon"></span>Mammography</li>
+
+            </ul>
+            <button class="clinic-info__cards__view-more">View More</button>
+          </div>
+          <div class="col-md-4 col-sm-6 col-xs-12 clinic-info__cards bg--median-color">
+            <span class="clinic-info__sub-heading">SERVICES</span>
+            <h2>Specialist medicine</h2>
+            <ul class="clinic-info__cards__item-list">
+              <li><span class="clinic__info__cards__tick"><img src="./assets/tick.png" alt="Tick Icon"></span>Gynecology</li>
+              <li><span class="clinic__info__cards__tick"><img src="./assets/tick.png" alt="Tick Icon"></span>Cardiology  </li>
+              <li><span class="clinic__info__cards__tick"><img src="./assets/tick.png" alt="Tick Icon"></span>Endocrinology</li>
+              <li><span class="clinic__info__cards__tick"><img src="./assets/tick.png" alt="Tick Icon"></span>Gastroenterology</li>
+
+            </ul>
+            <button class="clinic-info__cards__view-more bg--median-color">View More</button>
+          </div>
+          <div class="col-md-4 col-sm-6 col-xs-12 clinic-info__cards bg--primary-color">
+            <span class="clinic-info__sub-heading">VISIT US ANY TIME</span>
+            <h2>Closed</h2>
+            <ul class="clinic-info__cards__item-list">
+              <li class="d-flex justify-content-between"><span>Monday - Friday</span> <span>8:00 - 21:00</span></li>
+              <li class="d-flex justify-content-between"><span>Saturday</span><span>8:00 - 21:00</span></li>
+              <li class="d-flex justify-content-between"><span>Sunday</span><span>8:00 - 14:00</span></li>
+              <li class="d-flex justify-content-between"></li>
+
+            </ul>
+            <button class="clinic-info__cards__view-more bg--primary-color">Book An Appointment</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="container our-services">
+        <div class="row">
+          <div class="col-md-3 col-sm-6 col-xs-12">
+            <figure>
+              <img src="./assets/image1.jpg" alt="Telehealth Image" class="img-fluid our-services__cards__img">
+              <figcaption class="our-services__cards__description">
+                <div class="circular__icon">
+                  <img src="./assets/icon1.png" alt="" class="img-fluid">
+                </div>
+                <h3 class="our-services__cards__description__heading">We offer telehealth</h3>
+                <p>More than 850 specialist doctors, nurses, technicians, physiotherapists...</p>
+              </figcaption>
+            </figure>
+          </div>
+          <div class="col-md-3 col-sm-6 col-xs-12">
+            <figure>
+              <img src="./assets/image2.jpg" alt="" class="img-fluid our-services__cards__img">
+              <figcaption class="our-services__cards__description">
+                <div class="circular__icon">
+                  <img src="./assets/icon2.png" alt="Surgical interventions Image" >
+                </div>
+                <h3 class="our-services__cards__description__heading">Surgical interventions</h3>
+                <p>In just a few hours, you could be without experiencing the world in a way you may</p>
+              </figcaption>
+            </figure>
+          </div>
+          <div class="col-md-3 col-sm-6 col-xs-12">
+            <figure>
+              <img src="./assets/image3.jpg" alt="" class="img-fluid our-services__cards__img">
+              <figcaption class="our-services__cards__description">
+                <div class="circular__icon">
+                  <img src="./assets/icon3.png" alt="Doctors Timetable">
+                </div>
+                <h3 class="our-services__cards__description__heading">Doctor's timetables</h3>
+                <p>Phosfluorescently engage worldwide healthcare with enabled technology</p>
+              </figcaption>
+            </figure>
+          </div>
+          <div class="col-md-3 col-sm-6 col-xs-12">
+            <figure>
+              <img src="./assets/image4.jpg" alt="" class="img-fluid our-services__cards__img">
+              <figcaption class="our-services__cards__description">
+                <div class="circular__icon">
+                  <img src="./assets/icon4.png" alt="Patients info image">
+                </div>
+                <h3 class="our-services__cards__description__heading">Patients info</h3>
+                <p>Override the digital divide with additional clickthroughs from DevOps hanging fruit</p>
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <section class="container our-team">
+        <div class="row">
+          <div class="col-md-6 col-xs-12">
+            <img src="./assets/nurse.png" alt="" class="img-fluid">
+          </div>
+          <div class="col-md-6 col-xs-12 d-flex flex-column justify-content-center">
+            <span class="out-team__cards__sub-heading">OUR TEAM</span>
+            <h3 class="out-team__cards__main-heading">Welcome, new patients</h3>
+            <p class="out-team__cards__description">Our doctors are your partners in good health. It's easy to choose a primary care provider or specialist who's a good fit for you and your family. Select a doctor you prefer and book a visit.
+              Search Doctor by Specialty Ophthalmology Specialists</p>
+          </div>
+        </div>
+      </section>
     </main>
     <footer>
       
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 col-xs-12 d-flex flex-column ">
+            <img src="./assets/logo.png" alt="Logo" class="footer__img">
+            <span>Since 1997, Sano has worked diligently to provide the
+              best in medical services to each patients.</span>
+            <ul class="d-flex gap-4">
+              <li class="footer__social-icons"><i class="fa-brands fa-facebook"></i></li>
+              <li class="footer__social-icons"><i class="fa-brands fa-twitter"></i></li>
+              <li class="footer__social-icons"><i class="fa-brands fa-instagram"></i></li>
+              <li class="footer__social-icons"><i class="fa-brands fa-youtube"></i></li>
+              <li class="footer__social-icons"><i class="fa-brands fa-linkedin-in"></i></li>
+            </ul>
+            
+          </div>
+          <div class="col-md-6 col-xs-12 d-flex flex-column justify-content-center p-3">
+            <div class="row">
+              <div class="input-group mb-3">
+                <input type="text" class="footer__subscribe__input" placeholder="" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                <div class="input-group-append">
+                  <button class="footer__subscribe__button" type="button">Subscribe</button>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-4 col-sm-6 col-xs-12">
+                <h5>About Us</h5>
+                <ul>
+                  <li>Location</li>
+                  <li>Team</li>
+                  <li>Find a Doctor</li>
+                  <li>Carrier</li>
+                  <li>Contact</li>
+                  <li>Research</li>
+                </ul>
+              </div>
+              <div class="col-md-4 col-sm-6 col-xs-12">
+                <h5>Services</h5>
+                <ul>
+                  <li>Appointments</li>
+                  <li>Diagnostics</li>
+                  <li>Specialty Medicine</li>
+                  <li>Surgery Insurance Prices</li>
+                </ul>
+              </div>
+              <div class="col-md-4 col-sm-6 col-xs-12">
+                <h5>Main Location</h5>
+                <span>30 East 60th Street, Suite 2002, New York</span>
+                <h5>Working hours</h5>
+                <span>Mon-Sat: 8AM-8PM Sun: Closed</span>
+                <h5>General Inquiries </h5>
+                <span>Info@sano.com</span>
+                </ul>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
     </footer>
     
   </body>

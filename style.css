@@ -1,0 +1,190 @@
+:root{
+  --primary-color: rgb(35,90,183);
+  --secondary-color: rgb(65,179,229);
+  --normal-font: calc(1rem + 0.3vw);
+}
+ul{
+  list-style: none;
+  padding-left: 0px;
+}
+.logo{
+  width: 30%;
+}
+.navbar-nav{
+  font-size: var(--normal-font);
+}
+.nav-link:hover{
+  text-decoration: underline;
+  text-decoration-color: var(--primary-color);
+}
+.nav__appointments{
+  border: none;
+  background-color: var(--secondary-color);
+  padding: 1rem 1.5rem 1rem 1.5rem;
+  color: white;
+  font-size: var(--normal-font);
+}
+.banner{
+  background-image: url('./assets/banner.jpg');
+  padding-top: 10rem;
+  padding-bottom: 4rem;
+  background-size: cover;
+}
+.banner__container{
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
+
+}
+.banner__sub-heading{
+  font-size: calc(1.2rem + 0.6vw);
+  font-weight: 400;
+  color: var(--secondary-color);
+  margin-bottom: 2rem;
+}
+.banner__main-heading{
+  font-size: calc(2rem + 3vw);
+  color: var(--primary-color);
+  width: 50%;
+  margin-bottom: 2rem;
+}
+.banner__form__box{
+  padding: 1rem;
+  background-color: white;
+  border-radius: 15px;
+  margin-bottom: 2rem;
+}
+.banner__form{
+  display: flex;
+  padding: 1rem;
+  border-radius: 15px;
+  background-color: white;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  box-shadow: 0 20px 40px rgba(72, 78, 85, 0.6);
+  transform: translateY(-5px);
+}
+.banner__form__input-field{
+  border: none;
+  font-size: var(--normal-font);
+  border-right: 1px solid grey;
+}
+.banner__form__input-field--last{
+  border: none;
+  font-size: var(--normal-font);
+}
+.banner__form__book-now{
+  border: none;
+  background-color: var(--secondary-color);
+  padding: 1rem 3rem 1rem 3rem;
+  color: white;
+  font-size: var(--normal-font);
+}
+.dropdown--custom{
+  display: flex;
+  border-right: 1px solid grey;
+  font-size: var(--normal-font);
+}
+.banner__description{
+  color: black;
+}
+.clinic-info__cards{
+  background-color: var(--secondary-color);
+  color: white;
+  padding: 3rem;
+}
+.clinic-info__row{
+  position: relative;
+  bottom: 50px;
+}
+.bg--median-color{
+  background-color: rgb(4,132,207) !important;
+}
+.bg--primary-color{
+  background-color: var(--primary-color) !important;
+}
+.clinic-info__cards__item-list{
+  font-size: var(--normal-font);
+}
+.clinic__info__cards__tick{
+  margin-right: 1.5rem;
+}
+.clinic-info__sub-heading{
+  font-size: var(--normal-font);
+}
+.clinic-info__cards__view-more{
+  padding: 1rem 1.5rem 1rem 1.5rem;
+  border: 2px solid white;
+  color: white;
+  background-color: var(--secondary-color);
+}
+.our-services__cards__img{
+  object-fit: cover;
+}
+.our-services__cards__description{
+  padding: 1.5rem 1.2rem 1rem 1.2rem;
+  position: relative;
+}
+.our-services__cards__description__heading{
+  color: var(--primary-color);
+  font-size: calc(1.2rem + 0.4vw);
+}
+.circular__icon{
+  position: absolute;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  background-color: var(--primary-color);
+  top: 0;
+  transform: translateY(-60%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+.out-team__cards__sub-heading{
+ color: var(--secondary-color);
+ font-size: calc(1.2rem + 0.6vw);
+}
+.out-team__cards__main-heading{
+  color: var(--primary-color);
+  font-size: calc(1.3rem + 2vw);
+}
+.out-team__cards__description{
+  font-size: var(--normal-font);
+}
+footer{
+  background-color: rgb(238,243,249);
+  padding-top: 3rem;
+}
+.footer__img{
+  width: 40%;
+
+}
+.footer__social-icons{
+  background-color: var(--secondary-color);
+  border-radius: 50%;
+  padding: 1rem;
+  height: 4rem;
+  width: 4rem;
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+.footer__subscribe__input{
+  border: none;
+  padding: 1rem;
+}
+.footer__subscribe__button{
+  border: none;
+  background-color: var(--secondary-color);
+  color: white;
+  padding: 1.2rem;
+}
+footer h5{
+  color: var(--primary-color);
+  font-size: var(--normal-font);
+}
